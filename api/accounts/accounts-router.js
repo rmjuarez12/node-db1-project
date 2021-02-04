@@ -71,5 +71,19 @@ router.put(
   }
 );
 
+//-- DELETE
+// Delete anexisting account
+router.delete("/:id", getMiddleware.validateAccountID(Accounts), (req, res) => {
+  const { id } = req.params;
+
+  Accounts.remove(id)
+    .then(() => {
+      res.status(200).json({ message: "Account has been deleted" });
+    })
+    .catch((err) => {
+      res.status(500).json(err);
+    });
+});
+
 //* Export Modules
 module.exports = router;

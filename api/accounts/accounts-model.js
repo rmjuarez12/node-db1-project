@@ -29,7 +29,17 @@ function insert(account) {
 
 // Update an existing account
 function update(id, changes) {
-  return db("accounts").where({ id }).update(changes);
+  return db("accounts")
+    .where({ id })
+    .update(changes)
+    .then(() => {
+      return getByID(id);
+    });
+}
+
+// Delete an existing account
+function remove(id) {
+  return db("accounts").where({ id }).del();
 }
 
 //* Export modules
@@ -39,4 +49,5 @@ module.exports = {
   insert,
   getByName,
   update,
+  remove,
 };

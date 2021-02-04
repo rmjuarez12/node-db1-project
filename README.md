@@ -54,8 +54,8 @@ Visit [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/trysql.asp
 
 ### Write Accounts API
 
-- Write CRUD endpoints for the `accounts` resource. Use the `db` object imported from `data/dbConfig.js` for database access via `knex`.
-- Manually test your endpoints with a REST client like `Insomnia` or `Postman` to check they are working as expected.
+- [x] Write CRUD endpoints for the `accounts` resource. Use the `db` object imported from `data/dbConfig.js` for database access via `knex`.
+- [x] Manually test your endpoints with a REST client like `Insomnia` or `Postman` to check they are working as expected.
 
 #### Accounts Schema
 
@@ -99,4 +99,4 @@ The following exercises **require research**, the concepts needed to complete th
 
 Follow these steps for completing your project.
 
-- [ ] Submit a pull request to merge `<firstName-lastName>` Branch into main (student's Repo). **Please don't merge your own pull request**
+- [x] Submit a pull request to merge `<firstName-lastName>` Branch into main (student's Repo). **Please don't merge your own pull request**
